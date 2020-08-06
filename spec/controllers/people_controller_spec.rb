@@ -29,7 +29,7 @@ RSpec.describe PeopleController, type: :controller do
   # adjust the attributes here as well.
 
   # give it something to go on when carrying out the tests, that will work
-  let(:valid_attributes) { { email: 'jimji@jimji.co', password: 'jimjiace' } }
+  let(:valid_attributes) { { email: 'jimji@jimji.co', password: 'jimjiace', password_confirmation: 'jimjiace' } }
 
   # give it something to go on when carrying out the tests, that will not work
   let(:invalid_attributes) { { email: 'jimji', password: 'jimji' } }

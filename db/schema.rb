@@ -36,12 +36,5 @@ ActiveRecord::Schema.define(version: 20200805110046) do
     t.index ["person_id"], name: "index_posts_on_person_id"
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "email_address"
-    t.string "password"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   add_foreign_key "posts", "people"
 end
