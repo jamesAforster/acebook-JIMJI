@@ -27,11 +27,17 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password", :class => "form__input", placeholder: "Password Confirmation" %>
   </div>
 
+  <div class="field">
+    <%= f.label :username %>
+    <%= f.text_field :username, autocomplete: "username" %>
+  </div>
+
   <div class="actions">
     <div class="form__field">
       <%= f.submit "Sign up" %>
     </div>
   </div>
+
 <% end %>
 
   <p class="text--center">Not a member? <%= render "devise/shared/links" %></p>
